@@ -5,27 +5,32 @@ const journeySteps = [
   {
     icon: GraduationCap,
     title: "College Discovery",
-    description: "My journey began in college, where I discovered a deep interest in programming and problem-solving through data structures and algorithms.",
+    description:
+      "My journey began in college, where I discovered a deep interest in programming and problem-solving through data structures and algorithms.",
   },
   {
     icon: Briefcase,
     title: "Industry Exposure",
-    description: "In 2024, I gained industry exposure as an intern at GD Industries, where I learned to approach problems with a practical, solution-driven mindset.",
+    description:
+      "In 2024, I gained industry exposure as an intern at GD Industries, where I learned to approach problems with a practical, solution-driven mindset.",
   },
   {
     icon: Trophy,
     title: "Technical Recognition",
-    description: "Along the way, I've earned recognition by participating in prestigious competitions like the Smart India Hackathon, Maze Solver, and Line Follower, which further fueled my drive to keep learning.",
+    description:
+      "Along the way, I've earned recognition by participating in prestigious competitions like the Smart India Hackathon, Maze Solver, and Line Follower, which further fueled my drive to keep learning.",
   },
   {
     icon: Code,
     title: "Personal Projects",
-    description: "I built personal projects to sharpen my skills and quickly realized how much I enjoy bringing ideas to life through code.",
+    description:
+      "I built personal projects to sharpen my skills and quickly realized how much I enjoy bringing ideas to life through code.",
   },
   {
     icon: Cloud,
     title: "Current Exploration",
-    description: "Currently, I am exploring Linux, Cloud (AWS), and DevOps to strengthen my foundation in modern software development and deployment practices.",
+    description:
+      "Currently, I am exploring Linux, Cloud (AWS), and DevOps to strengthen my foundation in modern software development and deployment practices.",
   },
 ];
 
@@ -49,7 +54,7 @@ export const JourneySection = () => {
           >
             My <span className="text-gradient">Journey</span>
           </motion.h2>
-          
+
           <motion.div
             className="w-24 h-1 bg-portfolio-primary mx-auto mb-8 rounded-full"
             initial={{ width: 0 }}
@@ -58,12 +63,12 @@ export const JourneySection = () => {
             viewport={{ once: true }}
           />
         </motion.div>
-        
+
         <div className="space-y-12">
           {journeySteps.map((step, index) => {
             const Icon = step.icon;
             const isEven = index % 2 === 0;
-            
+
             return (
               <motion.div
                 key={step.title}
@@ -71,12 +76,26 @@ export const JourneySection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 viewport={{ once: true }}
-                className={`flex flex-col lg:flex-row items-center gap-6 lg:gap-8 ${!isEven ? 'lg:flex-row-reverse' : ''}`}
+                className={`flex flex-col lg:flex-row items-center gap-6 lg:gap-8 ${
+                  !isEven ? "lg:flex-row-reverse" : ""
+                }`}
               >
                 <div className="flex-1 w-full">
-                  <div className={`card-gradient p-6 rounded-2xl border border-portfolio-border text-center lg:${!isEven ? 'text-right' : 'text-left'}`}>
-                    <div className={`flex items-center gap-4 mb-4 justify-center lg:${!isEven ? 'justify-end' : 'justify-start'}`}>
-                      <div className={`p-3 rounded-full bg-portfolio-primary/20 ${!isEven ? 'order-last' : ''}`}>
+                  <div
+                    className={`card-gradient p-6 rounded-2xl border border-portfolio-border text-center lg:${
+                      !isEven ? "text-right" : "text-left"
+                    }`}
+                  >
+                    <div
+                      className={`flex items-center gap-4 mb-4 justify-center lg:${
+                        !isEven ? "justify-end" : "justify-start"
+                      }`}
+                    >
+                      <div
+                        className={`p-3 rounded-full bg-portfolio-primary/20 ${
+                          !isEven ? "order-last" : ""
+                        }`}
+                      >
                         <Icon className="h-6 w-6 text-portfolio-primary" />
                       </div>
                       <h3 className="text-xl font-semibold text-portfolio-text">
@@ -88,7 +107,7 @@ export const JourneySection = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Timeline connector */}
                 <div className="hidden lg:flex flex-col items-center">
                   <div className="w-4 h-4 rounded-full bg-portfolio-primary border-4 border-portfolio-surface" />
@@ -96,13 +115,13 @@ export const JourneySection = () => {
                     <div className="w-1 h-24 bg-gradient-to-b from-portfolio-primary to-portfolio-secondary opacity-50" />
                   )}
                 </div>
-                
+
                 <div className="flex-1 lg:block hidden" />
               </motion.div>
             );
           })}
         </div>
-        
+
         <motion.div
           className="text-center mt-16 card-gradient p-8 rounded-2xl border border-portfolio-border"
           initial={{ opacity: 0, y: 30 }}
@@ -111,8 +130,9 @@ export const JourneySection = () => {
           viewport={{ once: true }}
         >
           <p className="text-lg text-portfolio-text leading-relaxed">
-            Today, as a fresher, I'm eager to apply this blend of technical skills, leadership experience, 
-            and curiosity to meaningful projects and professional opportunities.
+            As a fresher, I am eager to leverage my technical skills,
+            collaborative mindset and curiosity to contribute to meaningful
+            projects and explore professional opportunities.
           </p>
         </motion.div>
       </div>

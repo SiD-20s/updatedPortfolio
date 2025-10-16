@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import avatarImage from "@/assets/avatar3.jpeg";
 
 const skills = [
-  "React.js", "Node.js", "Express.js", "MongoDB", "Java", "JavaScript", 
-  "HTML", "CSS", "Tailwind CSS", "Bootstrap", "AWS (EC2, S3, IAM, VPC, CloudWatch)", 
-  "MySQL", "GitHub", "Postman", "Figma", "IntelliJ", "VS Code"
+  "Next.js", "React.js", "Node.js", "Express.js", "MongoDB", "Java", "JavaScript", 
+  "HTML", "CSS", "Tailwind CSS", "Bootstrap", "AWS (EC2, S3, IAM, VPC, CloudWatch)", "Docker", 
+  "MySQL", "GitHub", "Git", "Github Actions", "Postman", "Figma", "IntelliJ", "VS Code"
 ];
 
 const socialLinks = [
