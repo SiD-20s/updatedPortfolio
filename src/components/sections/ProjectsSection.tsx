@@ -63,7 +63,7 @@ const projects = [
       "Clerk",
     ],
     githubUrl: "https://github.com/SiD-20s/File-Share.git",
-    demoUrl: "https://file-share-demo.vercel.app/",
+    demoUrl: "https://file-share-cyan.vercel.app/",
   },
   {
     title: "ReadEase Browser Extension",
